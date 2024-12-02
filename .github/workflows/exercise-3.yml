@@ -1,0 +1,18 @@
+name: java ci with gradle
+
+on:
+  push:
+    branches:
+      - dev
+
+defaults:
+  run:
+    working-directory: ./assignments/exercise-3
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+      - run chmod +x gradlew
