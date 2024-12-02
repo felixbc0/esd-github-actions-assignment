@@ -1,10 +1,9 @@
 name: python-application
 
-run:
-  on:
-    push:
-      branches:
-        - dev
+on:
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
