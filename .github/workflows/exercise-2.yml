@@ -1,0 +1,17 @@
+name: python-application
+
+run:
+  on:
+    push:
+      branches:
+        - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-python@v3
+      - name: Run main
+        run: python assignments/exercise-2/main.py
